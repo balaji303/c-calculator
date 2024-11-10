@@ -22,9 +22,8 @@ jobs:
 
       # Compile the C program
       - name: Compile Calculator App
-        run: |
-          gcc app/test_calculator.c app/calculator.c -o test_calculator
+        run: gcc app/calculator.c -o test_calculator
 
       # Run tests
-      # - name: Run Tests
-      #   run: ./test_calculator.sh
+      - name: Run Tests
+        run: ./test_calculator.sh
