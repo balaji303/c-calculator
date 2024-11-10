@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Test 1: Addition
-result=$(./calculator 1 + 2)
+result=$(./EXE_calculator 1 + 2)
 if [ "$result" -eq 3 ]; then
   echo "Test 1 Passed: Addition"
 else
@@ -10,7 +10,7 @@ else
 fi
 
 # Test 2: Subtraction
-result=$(./calculator 5 - 3)
+result=$(./EXE_calculator 5 - 3)
 if [ "$result" -eq 2 ]; then
   echo "Test 2 Passed: Subtraction"
 else

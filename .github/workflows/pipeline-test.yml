@@ -22,11 +22,11 @@ jobs:
 
       # Compile the C program
       - name: Compile Calculator App
-        run: gcc app/calculator.c -o test_calculator
+        run: gcc app/calculator.c -o EXE_calculator
 
       - name: Make test_calculator.sh executable
         run: chmod +x ./test_calculator.sh
 
       # Run tests
       - name: Run Tests
-        run: ./test_calculator.sh
+        run: ./calculator_test_file.sh
