@@ -1,0 +1,29 @@
+name: C Tests
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Install dependencies
+      - name: Install GCC
+        run: sudo apt-get install gcc -y
+
+      # Compile the C program
+      - name: Compile Calculator App
+        run: gcc test_calculator.c calculator.c -o test_calculator
+
+      # Run tests
+      # - name: Run Tests
+      #   run: ./test_calculator.sh
