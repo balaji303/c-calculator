@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include ".\calculator.h"
+#include "calculator.h"
 
 static void test_add(void);
 

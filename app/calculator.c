@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include ".\calculator.h"
+#include "calculator.h"
 
 double add(double x, double y)
 {
