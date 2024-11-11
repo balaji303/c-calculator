@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -24,9 +25,10 @@ jobs:
       - name: Compile Calculator App
         run: gcc app/calculator.c -o EXE_calculator
 
+      # Give permission to run shell script
       - name: Make calculator_test_file.sh executable
         run: chmod +x ./calculator_test_file.sh
 
-      # Run tests
+      # Run shell script tests
       - name: Run Tests
         run: ./calculator_test_file.sh

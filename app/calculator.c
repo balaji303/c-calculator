@@ -25,13 +25,12 @@ int main(int argc, char *argv[])
         case '-':
             result = subtract(num1, num2);
             break;
-        case '*':
+        case 'x':
             result = multiply(num1, num2);
             break;
-        case '/':
+        case 'd':
             result = divide(num1, num2);
-            break;
-    	
+            break;    	
     	default:
             fprintf(stderr, "ERROR Unsupported operator: %c\n", operator);
             return 1;
@@ -61,7 +60,7 @@ double divide(double x, double y)
 {
     if (y == 0)
     {
-        printf("Cannot divide by 0");
+        //Cannot divide by 0;
         return 0;
     }
     return (x * 1.0 / y);

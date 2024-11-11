@@ -1,5 +1,4 @@
-// #include <stdio.h>
-
+// Function prototypes
 double add(double x, double y);
 double subtract(double x, double y);
 double multiply(double x, double y);
