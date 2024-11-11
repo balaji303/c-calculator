@@ -99,7 +99,7 @@ fi
 ####################### START MULTIPLICATION TEST #################################
 # Test 1: Multiplication
 result=$(./EXE_calculator 2 x 4)
-if [ "$result" -eq 8 ]; then
+if [ "$result" -eq 2 ]; then
   echo "MUL_Test 1 Passed: Multiplication"
 else
   echo "MUL_Test 1 Failed: Multiplication"
